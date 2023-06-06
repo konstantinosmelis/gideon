@@ -12,9 +12,9 @@ client.commands = new Collection();
 const commands = []
 
 async function run() {
-	fs.readdir(path.resolve(__dirname, './events/'), (error, files) => {
+    fs.readdir(path.resolve(__dirname, './events/'), (error, files) => {
         if(error)
-			return console.error(error);
+            return console.error(error);
 
         files.forEach((file) => {
             let events = require(`./events/${file}`);
@@ -52,8 +52,8 @@ async function loadCommands() {
             );
         }
         catch(error) {
-		    console.error(error);
-		}
+            console.error(error);
+        }
     })();
     console.log(`${total} commands loaded!`);
 }
