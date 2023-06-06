@@ -1,0 +1,17 @@
+{
+  "name": "gideon-discord",
+  "version": "1.0.0",
+  "description": "Gideon, the discord bot for the League of Assassins",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3"
+  }
+}
